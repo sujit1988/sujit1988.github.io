@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume – Sai Sujit Tokala</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @media print {
+      .navbar, .theme-toggle, .hamburger, .footer, .no-print { display: none !important; }
+      body { font-size: 11pt; color: #000; }
+      .resume-section { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar no-print">
+  <div class="nav-brand">Sai Sujit Tokala</div>
+  <button class="hamburger" aria-label="Menu">☰</button>
+  <ul class="nav-menu">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="phases.html" class="nav-link">Career Phases</a></li>
+    <li><a href="projects.html" class="nav-link">Projects</a></li>
+    <li><a href="skills.html" class="nav-link">Skills</a></li>
+    <li><a href="resume.html" class="nav-link active">Resume</a></li>
+    <li><button class="theme-toggle">🌙</button></li>
+  </ul>
+</nav>
+
+<div class="resume-container">
+
+  <!-- Header -->
+  <header class="resume-header">
+    <h1>Sai Sujit Tokala</h1>
+    <p class="resume-tagline">Cloud Engineer → Technical Program Manager → SDM → Systems Leader</p>
+    <p class="resume-contact">United States &nbsp;|&nbsp; LinkedIn &nbsp;|&nbsp; Portfolio Site &nbsp;|&nbsp; email@example.com</p>
+    <button class="print-btn no-print" onclick="window.print()">📄 Print / Save as PDF</button>
+  </header>
+
+  <!-- Summary -->
+  <section class="resume-section">
+    <h2>Summary</h2>
+    <p>Systems-thinking technical program leader with 8+ years of experience bridging cloud engineering, scaled agile delivery, financial visibility, security compliance, and customer-facing service delivery. Proven track record of designing operating models — not just following frameworks — across DARPA/GovCloud, SAFe rollouts (7+ products, 55+ story maps), Jira-to-P&L financial systems (500+ people), HCAP/EKS release trains, open-source compliance programs, and SDM for global enterprises (Daiichi). Increasingly incorporating AI and psychology into how I design systems for human decision-makers.</p>
+  </section>
+
+  <!-- Experience -->
+  <section class="resume-section">
+    <h2>Experience</h2>
+
+    <div class="resume-role">
+      <div class="role-header">
+        <h3>Service Delivery Manager (SDM) – Daiichi</h3>
+        <span class="role-company">Hitachi Digital Services</span>
+        <span class="role-dates">2021 – Present</span>
+      </div>
+      <ul>
+        <li>Accountable for the health of a global pharma's AWS + Azure cloud estate: security posture, networking, observability, and stakeholder trust.</li>
+        <li>Led cloud security programs: vulnerability management (triage → prioritize → remediate → report) across AWS Security Hub, Azure Defender, and Prisma Cloud.</li>
+        <li>Designed centralized network architectures: AWS Network Firewall, Azure Firewall, NSG governance, hub-spoke models, and segmentation strategies.</li>
+        <li>Established Datadog observability: metrics, logs, dashboards, SLOs, and VPC Flow Log analysis for security and performance.</li>
+        <li>Owned weekly/monthly/quarterly customer reviews; built trust through consistent delivery, transparent reporting, and proactive risk communication.</li>
+        <li>Balanced incidents, roadmap, and relationship — capacity allocation across security, networking, observability, and customer requests.</li>
+      </ul>
+    </div>
+
+    <div class="resume-role">
+      <div class="role-header">
+        <h3>Technical Program Manager / Scrum Master / Release Train Lead</h3>
+        <span class="role-company">Hitachi Vantara (formerly REAN Cloud)</span>
+        <span class="role-dates">2017 – 2021</span>
+      </div>
+      <ul>
+        <li><strong>SAFe & Story Mapping:</strong> Rolled out SAFe 4.6 across 7+ products; facilitated 55+ story mapping workshops turning product visions into epics and PI backlogs across US–India teams.</li>
+        <li><strong>CFO Tracking:</strong> Designed Jira + Tempo + HR data model mapping 500+ engineers' work to P&L categories (R&D, delivery, ops), enabling portfolio-level cost visibility for CFO and shareholder reporting.</li>
+        <li><strong>HCAP/EKS Release Trains:</strong> Owned monthly release trains for the Hitachi Cloud Acceleration Platform; established go/no-go checklists, deployment runbooks, and rollback procedures.</li>
+        <li><strong>EC2 → EKS Migration:</strong> Managed multi-release migration program: containerization, Helm charts, cluster provisioning, observability on EKS.</li>
+        <li><strong>Blackduck / OSS Compliance:</strong> Partnered with legal to build open-source compliance program; formalized license review playbook (Green/Yellow/Red) for GPL/AGPL risk.</li>
+        <li><strong>Jira-as-OS:</strong> Built Jira automations (FixVersion propagation, sprint lifecycle, release workflows), program dashboards, and governance structures across 7+ projects.</li>
+        <li><strong>Managed Services:</strong> Established governance cadences, runbooks, SOPs, and reporting for managed cloud accounts (CITI MGS patterns).</li>
+      </ul>
+    </div>
+
+    <div class="resume-role">
+      <div class="role-header">
+        <h3>Cloud Engineer / DARPA Delivery Lead</h3>
+        <span class="role-company">REAN Cloud</span>
+        <span class="role-dates">2016 – 2018</span>
+      </div>
+      <ul>
+        <li><strong>DARPA / GovCloud:</strong> Led multi-product delivery into DARPA's AWS GovCloud: designed bootstrap runbook, omnibus artifact bundles, and builder-vs-target architecture for air-gapped deployments.</li>
+        <li><strong>STIG Compliance:</strong> Designed the "STIG Pyramid" (Chef → InSpec → Nessus); built STIG-hardened AMI pipelines with automated scan-remediate-rescan cycles.</li>
+        <li><strong>IaC Foundations:</strong> Migrated from CloudFormation to Terraform; designed reusable module library for VPC, EC2, IAM, RDS. Built Chef cookbook ecosystem for configuration management.</li>
+        <li><strong>Offline-First Platforms:</strong> Built QA and deployment pipelines for environments with zero internet access; Artifactory as "local internet" for all dependencies.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Key Achievements -->
+  <section class="resume-section">
+    <h2>Key Achievements</h2>
+    <ul>
+      <li><strong>55+ story mapping workshops</strong> across 7+ products — developed reusable playbook adopted org-wide.</li>
+      <li><strong>CFO tracking for 500+ people</strong> — Jira + Tempo + HR → P&L; used in quarterly and shareholder financial reporting.</li>
+      <li><strong>DARPA air-gapped platform delivery</strong> — bootstrap runbook enabling repeatable, audit-ready deployments with zero internet.</li>
+      <li><strong>Monthly HCAP/EKS release trains</strong> — reduced change-related incidents through go/no-go checklists and standardized runbooks.</li>
+      <li><strong>OSS compliance program</strong> — Blackduck + legal playbook reduced license risk across platform releases.</li>
+      <li><strong>Daiichi cloud security posture</strong> — structured vulnerability management program; clear reduction in critical findings over successive quarters.</li>
+    </ul>
+  </section>
+
+  <!-- Skills Summary -->
+  <section class="resume-section">
+    <h2>Core Skills</h2>
+    <div class="skills-tags">
+      <span class="tag">AWS</span>
+      <span class="tag">Azure</span>
+      <span class="tag">GovCloud</span>
+      <span class="tag">Terraform</span>
+      <span class="tag">Chef</span>
+      <span class="tag">InSpec</span>
+      <span class="tag">Docker</span>
+      <span class="tag">Kubernetes/EKS</span>
+      <span class="tag">Helm</span>
+      <span class="tag">Jenkins</span>
+      <span class="tag">Datadog</span>
+      <span class="tag">STIG</span>
+      <span class="tag">Blackduck</span>
+      <span class="tag">SAFe</span>
+      <span class="tag">Scrum</span>
+      <span class="tag">Story Mapping</span>
+      <span class="tag">PI Planning</span>
+      <span class="tag">Jira (Advanced)</span>
+      <span class="tag">Confluence</span>
+      <span class="tag">Tempo</span>
+      <span class="tag">Release Trains</span>
+      <span class="tag">SDM</span>
+      <span class="tag">Vulnerability Mgmt</span>
+      <span class="tag">Network Security</span>
+      <span class="tag">P&L / CFO Tracking</span>
+      <span class="tag">AI & Psychology</span>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="resume-section">
+    <h2>Certifications</h2>
+    <ul>
+      <li>SAFe Agilist (SA) – Scaled Agile</li>
+      <li>AWS Solutions Architect – Amazon Web Services</li>
+      <li>AWS DevOps Engineer – Amazon Web Services</li>
+      <li>Certified Scrum Master (CSM) – Scrum Alliance</li>
+      <li>ITIL Foundations – AXELOS</li>
+    </ul>
+  </section>
+
+  <!-- Education -->
+  <section class="resume-section">
+    <h2>Education</h2>
+    <p><strong>Master of Science</strong> – Computer Science</p>
+    <p><strong>Bachelor of Technology</strong> – Computer Science & Engineering</p>
+  </section>
+
+  <!-- Research Interests -->
+  <section class="resume-section">
+    <h2>Research Interests (AI + Psychology)</h2>
+    <ul>
+      <li>Cognitive load and decision quality in large-scale cloud release trains (with AI-assisted support)</li>
+      <li>Trust formation between enterprises and cloud SDMs: a socio-technical and psychological study</li>
+      <li>Designing human-centered dashboards: from Jira/Tempo to P&L with behavioral insights</li>
+      <li>Compliance-as-code human factors: STIG, Chef, InSpec, and AI-augmented security programs</li>
+      <li>Operational models for secure offline-first AI platforms in regulated environments</li>
+    </ul>
+  </section>
+
+</div>
+
+<footer class="footer no-print">
+  <p>© 2024 Sai Sujit Tokala. From Cloud Engineer to Systems Leader.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
